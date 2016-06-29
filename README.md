@@ -37,8 +37,8 @@ class App extends React.Component {
       <LoadingBar
         progress={ this.state.progress }
         error={ this.state.error }
-        onErrorDone={ this.errorDone.bind(this) }
-        onProgressDone={ this.progressDone.bind(this) } />
+        onErrorDone={ errorDone.bind(this) }
+        onProgressDone={ progressDone.bind(this) } />
     )
   }
 
@@ -70,8 +70,8 @@ Usage With Full Props
         progress={ this.state.progress }
         direction={ this.state.direction }
         error={ this.state.error }
-        onErrorDone={ this.errorDone.bind(this) }
-        onProgressDone={ this.progressDone.bind(this) } />
+        onErrorDone={ errorDone.bind(this) }
+        onProgressDone={ progressDone.bind(this) } />
     )
   }
 
